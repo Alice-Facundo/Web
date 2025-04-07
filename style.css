@@ -1,0 +1,16 @@
+h1 {
+    background-color: rgb(6, 5, 11);
+    color: bisque;
+    text-align: center;
+}
+
+.texto {
+    background-color: rgb(6, 5, 11);
+    color: bisque;
+    text-align: center;
+}
+
+img {
+    width: 30%;
+    height: 30%;
+}
