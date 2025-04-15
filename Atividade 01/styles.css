@@ -1,0 +1,74 @@
+table, th, td {
+    border-radius: 4px;
+    border-collapse: collapse;
+    border:2px solid black;
+}
+
+table {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    background-color: white;
+}
+
+td {
+    padding: 2px;
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(175, 175, 175);
+}
+
+th{
+    background-color: brown;
+    padding: 2px;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: oblique;
+    font-size: large;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(246, 226, 138);
+    border-radius: 4px;
+    padding: 7px;
+}
+
+html {
+    background-color: rgb(161, 239, 239);
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+ul {
+    background-color: beige;
+    border-radius: 5px;
+}
+
+caption {
+    background-color: rgb(207, 140, 140);
+}
+
+a:hover {
+    background-color: blanchedalmond;
+    color: rgb(63, 26, 156);
+}
+
+img:hover {
+    width: 55%;
+    height: 55%;
+    outline: 2px;
+}
