@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pica-Pau - Desenho Animado</title>
+  <style>
+    /* Reset e fonte */
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--bg-color);
+      color: var(--text-color);
+    }
+
+    /* Variáveis de cor para Light/Dark */
+    :root {
+      --primary-color: #D32F2F;
+      --bg-color: #ffffff;
+      --text-color: #333333;
+      --nav-bg: #333333;
+      --side-bg: #f1f1f1;
+      --main-bg: #ffffff;
+      --footer-bg: #dddddd;
+    }
+    [data-theme="dark"] {
+      --bg-color: #121212;
+      --text-color: #e0e0e0;
+      --nav-bg: #222222;
+      --side-bg: #2a2a2a;
+      --main-bg: #1e1e1e;
+      --footer-bg: #333333;
+    }
+
+    /* Header */
+    .header {
+      padding: 60px;
+      text-align: center;
+      background: var(--primary-color);
+      color: white;
+    }
+
+    /* Navbar sticky */
+    .navbar {
+      display: flex;
+      position: sticky;
+      top: 0;
+      background: var(--nav-bg);
+      z-index: 100;
+    }
+    .navbar a {
+      flex: 1;
+      padding: 14px 20px;
+      text-align: center;
+      text-decoration: none;
+      color: white;
+    }
+    .navbar a:hover {
+      background: #dddddd;
+      color: black;
+    }
+
+    /* Hamburger menu */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      padding: 14px;
+      cursor: pointer;
+    }
+    .hamburger span {
+      height: 3px;
+      background: white;
+      margin: 4px 0;
+      border-radius: 2px;
+    }
+
+    /* Grid principal */
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .side {
+      flex: 30%;
+      background: var(--side-bg);
+      padding: 20px;
+    }
+    .main {
+      flex: 70%;
+      background: var(--main-bg);
+      padding: 20px;
+    }
+
+    /* Footer */
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: var(--footer-bg);
+    }
+
+    /* Responsivo: navbar + grid empilham */
+    @media screen and (max-width: 700px) {
+      .navbar, .row { flex-direction: column; }
+      .hamburger { display: flex; }
+      .navbar a { display: none; }
+      .navbar.show a { display: block; }
+    }
+
+    /* Botão de tema */
+    .theme-toggle {
+      position: fixed;
+      bottom: 1rem;
+      right: 1rem;
+      background: var(--primary-color);
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      cursor: pointer;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Pica-Pau</h1>
+    <p>O Clássico Desenho Animado com Risada Icônica</p>
+  </div>
+
+  <div class="navbar" id="navbar">
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+    <a href="#descricao">Descrição</a>
+    <a href="#historia">História</a>
+    <a href="#personagens">Personagens</a>
+    <a href="#curiosidades">Curiosidades</a>
+  </div>
+
+  <div class="row">
+    <div class="side">
+      <h2>Sobre o Desenho</h2>
+      <img style="height:200px;" src="https://preview.redd.it/discuss%C3%A3o-ser%C3%ADssima-aqui-qual-%C3%A9-a-sua-vers%C3%A3o-favorita-do-v0-tmlm7rpr8fac1.png?auto=webp&s=a77cc14599bb5ae183aa01fb3481a266f835bfa6" alt="Pica-Pau clássico">
+      <p>Pica-Pau surgiu em 1940, criado por Walter Lantz. Conhecido por sua risada contagiante e peças hilárias.</p>
+      <h3>Episódios</h3>
+      <p>Mais de 200 curtas-metragens entre 1940 e 1972.</p>
+      <img style="height:60px;" src="https://multiversonoticias.com.br/wp-content/uploads/2022/12/Pica-Pau.jpg" alt="Cartaz Pica-Pau"><br>
+      <img style="height:60px;" src="https://noticiasdatv.uol.com.br/media/uploads/pica-pau-em-portugues.jpg" alt="Pica-Pau dublado" style="height:60px;"><br>
+      <img style="height:60px;" src="https://segredosdomundo.r7.com/wp-content/uploads/2020/05/pica-pau-como-surgiu-a-historia-de-um-dos-desenhos-animados-mais-famosos-do-mundo-3.jpg" alt="Origem do Pica-Pau" style="height:60px;">
+    </div>
+
+    <div class="main">
+      <section id="descricao">
+        <h2>Descrição</h2>
+        <p>Woody Woodpecker, no Brasil Pica-Pau, é um pica-pau animado que adora pregar peças e tem como marca registrada seu riso único.</p>
+      </section>
+
+      <section id="historia">
+        <h2>História</h2>
+        <h5>Primeira aparição: <em>Knock Knock</em> (1940)</h5>
+        <img style="height:200px;" src="https://infonewss-bucket.s3.amazonaws.com/2024/07/Desenho-Pica-Pau.jpeg" >        
+        <p>Produzido pela Universal Pictures, o personagem conquistou público mundial e gerou séries e filmes.</p>
+      </section>
+
+      <section id="personagens">
+        <h2>Personagens</h2>
+        <ul>
+          <li><strong>Pica-Pau</strong> – Protagonista trapalhão.</li>
+          <li><strong>Winnie</strong> – Par romântico.</li>
+          <li><strong>Andy Panda</strong> – Amigo nos primeiros curtas.</li>
+          <li><strong>Buzz Buzzard</strong> – Antagonista clássico.</li>
+        </ul>
+      </section>
+
+      <section id="curiosidades">
+        <h2>Curiosidades</h2>
+        <p>O riso foi originalmente gravado por Mel Blanc antes de se tornar assinatura oficial.</p>
+        <p>Em 2017, uma série de animação 3D estreou na Netflix.</p>
+      </section>
+    </div>
+  </div>
+
+  <div class="footer">
+    <h2>&copy; 2025 Pica-Pau Brasil</h2>
+  </div>
+
+  <button class="theme-toggle" id="theme-toggle">Modo Escuro</button>
+
+  <script>
+    // Menu sanduíche (mobile)
+    const hb = document.getElementById('hamburger');
+    const nav = document.getElementById('navbar');
+    hb.addEventListener('click', () => nav.classList.toggle('show'));
+
+    // Alterna tema claro/escuro no <html>
+    const toggle = document.getElementById('theme-toggle');
+    toggle.addEventListener('click', function(e) {
+      const root = document.documentElement;
+      if (root.hasAttribute('data-theme')) {
+        root.removeAttribute('data-theme');
+        e.target.textContent = 'Modo Escuro';
+      } else {
+        root.setAttribute('data-theme', 'dark');
+        e.target.textContent = 'Modo Claro';
+      }
+    });
+  </script>
+</body>
+</html>
